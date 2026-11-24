@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,145 +6,795 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080b12">
 <meta name="description" content="LEGADU Festas & Eventos. Locação de tendas, mesas, cadeiras, brinquedos e estrutura para festas em Ribeirão Grande e região.">
+<meta property="og:title" content="LEGADU Festas & Eventos">
+<meta property="og:description" content="Sua festa merece esse cuidado. Tendas, mesas, cadeiras e brinquedos para seu evento.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo-legadu.png">
 <title>LEGADU Festas & Eventos | Sua festa merece esse cuidado</title>
 <link rel="icon" href="assets/logo-legadu.png">
+
 <style>
-:root{--bg:#080b12;--panel:#111722;--panel2:#171f2d;--red:#ed3038;--blue:#2358d8;--white:#f7f8fb;--muted:#aab3c2;--line:rgba(255,255,255,.1);--gold:#d6b878}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(8,11,18,.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.09);box-shadow:0 8px 30px rgba(0,0,0,.18)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand img{width:82px;height:58px;object-fit:contain;background:transparent;border-radius:0;padding:0;filter:drop-shadow(0 5px 12px rgba(0,0,0,.35))}
-.brand strong{font-size:16px;letter-spacing:.13em}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.16em}
-nav{display:flex;gap:25px;align-items:center;color:#d7dce5;font-size:13px}nav a:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:9px;background:linear-gradient(110deg,var(--red),#b91e2b);font-weight:800;font-size:13px;box-shadow:0 9px 28px rgba(237,48,56,.18);transition:.2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.24);box-shadow:none}
-.hero{position:relative;overflow:hidden;padding:92px 0 84px;background:radial-gradient(ellipse at 78% 35%,rgba(35,88,216,.23),transparent 38%),radial-gradient(ellipse at 15% 80%,rgba(237,48,56,.13),transparent 32%),linear-gradient(135deg,#0b101a,#080b12 65%)}
-.hero:after{content:"";position:absolute;right:-130px;top:-180px;width:520px;height:520px;border:1px solid rgba(255,255,255,.07);border-radius:50%;box-shadow:0 0 0 55px rgba(255,255,255,.018),0 0 0 110px rgba(255,255,255,.012);pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;position:relative;z-index:1}
-.eyebrow{color:#e9b8bb;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800}
-h1{font-size:clamp(40px,5.8vw,70px);line-height:1.04;letter-spacing:-.045em;margin:17px 0 20px;max-width:650px}
-h1 span{background:linear-gradient(90deg,#ff6268,#7195ff);background-clip:text;color:transparent}
-.hero p{color:#c1c9d5;max-width:540px;font-size:17px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-logo{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;transform:none;filter:drop-shadow(0 22px 34px rgba(0,0,0,.45))}
-.hero-logo img{display:block;width:100%;height:auto;object-fit:contain;mix-blend-mode:normal}
-.hero-note{margin-top:16px;color:#aeb8c7;text-align:center;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0c111a}
-.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:20px 0}
-.stat{text-align:center;padding:5px 12px;border-right:1px solid var(--line)}.stat:last-child{border:0}
-.stat b{display:block;font-size:14px}.stat span{color:var(--muted);font-size:11px}
-section{padding:78px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}
-.kicker{color:#ff6970;text-transform:uppercase;font-size:10px;letter-spacing:.2em;font-weight:800}
-h2{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.035em;margin:9px 0 0}
-.section-head p{color:var(--muted);max-width:430px;font-size:13px;margin:0}
-.catalog{background:linear-gradient(180deg,#0a0e16,#0c111a)}
-.catalog-full-wrap{display:flex;justify-content:flex-start;margin:-8px 0 24px}
-.catalog-full{background:linear-gradient(110deg,#2358d8,#1744ad);box-shadow:0 9px 28px rgba(35,88,216,.22);letter-spacing:.02em}.catalog-full:hover{filter:brightness(1.12)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:linear-gradient(145deg,#151d2a,#0f1520);border:1px solid rgba(255,255,255,.11);border-radius:17px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
-.card:hover{transform:translateY(-5px);border-color:rgba(95,133,231,.55);box-shadow:0 18px 38px rgba(0,0,0,.24)}
-/* Mostra a foto inteira, sem cortes */
-.card-art{height:230px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#080b12}
-.card-art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;border-radius:0}
-.card:nth-child(2n) .card-art{background:radial-gradient(circle at 50% 50%,rgba(237,48,56,.12),transparent 55%),linear-gradient(135deg,#151a24,#080b12)}
-.art-icon{font-size:76px;filter:drop-shadow(0 12px 12px rgba(0,0,0,.3))}
-.card-content{padding:20px}.card-content h3{font-size:18px;margin:0 0 7px}
-.card-content p{font-size:12px;color:var(--muted);min-height:40px;margin:0 0 17px}
-.card-content a{font-size:12px;font-weight:800;color:#fff;border-bottom:1px solid var(--red);padding-bottom:4px}
-.note{margin-top:22px;color:#aeb8c7;font-size:12px;padding:15px 17px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.025)}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.why-panel{background:linear-gradient(145deg,#17243a,#101722);border:1px solid var(--line);border-radius:18px;padding:30px}
-.why-panel h3{font-size:25px;line-height:1.15;margin:0 0 13px}.why-panel p{color:#b8c2d1;font-size:14px;margin:0}
-.points{display:grid;gap:16px}.point{display:flex;gap:13px;align-items:flex-start}
-.check{width:30px;height:30px;flex:0 0 30px;border-radius:9px;background:linear-gradient(135deg,var(--red),var(--blue));display:grid;place-items:center;font-weight:900}
-.point b{display:block;font-size:14px}.point span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
-.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:12px}
-.gallery-box{min-height:190px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(135deg,#1c2b43,#111722);display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;color:#dce4f0}
-.gallery-box:first-child{min-height:260px;background:radial-gradient(ellipse at 60% 30%,rgba(35,88,216,.34),transparent 60%),linear-gradient(135deg,#1b2c43,#111722)}
-.gallery-box strong{display:block;font-size:17px}.gallery-box small{display:block;color:#aeb8c7;margin-top:5px;font-size:11px}
-.cta{padding:0 0 80px}
-.cta-box{border-radius:20px;padding:42px;background:radial-gradient(circle at 90% 20%,rgba(35,88,216,.35),transparent 35%),linear-gradient(110deg,#1b202d,#101722);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:25px}
-.cta-box h2{font-size:32px;max-width:570px}.cta-box p{color:#b9c3d1;font-size:13px}
-footer{border-top:1px solid var(--line);padding:28px 0;color:#9da8b8;font-size:11px}
-.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
-.footer-brand{display:flex;align-items:center;gap:10px}.footer-brand img{width:66px;height:48px;object-fit:contain;background:transparent;border-radius:0;padding:0}
-.social-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:9px}
-.social-links a{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid rgba(255,255,255,.16);border-radius:8px;color:#f7f8fb;font-size:11px;font-weight:700;transition:.2s}
-.social-links a:hover{border-color:#7195ff;background:rgba(35,88,216,.13);transform:translateY(-2px)}
-.wa-float{position:fixed;right:20px;bottom:20px;z-index:30;background:#19b85a;color:#fff;padding:13px 17px;border-radius:30px;font-weight:800;font-size:12px;box-shadow:0 8px 30px rgba(0,0,0,.4)}
-@media(max-width:800px){
- nav{display:none}.hero{padding:58px 0}.hero-grid,.why-grid{grid-template-columns:1fr;gap:30px}
- .hero-logo{max-width:440px;margin:auto}.cards{grid-template-columns:repeat(2,1fr)}
- .section-head{display:block}.section-head p{margin-top:12px}
- .gallery{grid-template-columns:1fr 1fr}.gallery-box:first-child{grid-column:span 2}
- .cta-box{display:block;padding:28px}.cta-box .btn{margin-top:10px}
+:root{
+ --bg:#080b12;
+ --panel:#111722;
+ --panel2:#171f2d;
+ --red:#ed3038;
+ --blue:#2358d8;
+ --white:#f7f8fb;
+ --muted:#aab3c2;
+ --line:rgba(255,255,255,.1);
+ --gold:#d6b878
 }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ background:var(--bg);
+ color:var(--white);
+ font-family:Inter,Arial,Helvetica,sans-serif;
+ line-height:1.55
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+
+header{
+ position:sticky;
+ top:0;
+ z-index:20;
+ background:rgba(8,11,18,.94);
+ backdrop-filter:blur(18px);
+ border-bottom:1px solid rgba(255,255,255,.09);
+ box-shadow:0 8px 30px rgba(0,0,0,.18)
+}
+.nav{
+ height:76px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:24px
+}
+.brand{
+ display:flex;
+ align-items:center;
+ gap:12px;
+ min-width:0
+}
+.brand img{
+ width:82px;
+ height:58px;
+ object-fit:contain;
+ background:transparent;
+ border-radius:0;
+ padding:0;
+ filter:drop-shadow(0 5px 12px rgba(0,0,0,.35))
+}
+.brand strong{font-size:16px;letter-spacing:.13em}
+.brand small{
+ display:block;
+ color:var(--muted);
+ font-size:10px;
+ letter-spacing:.16em
+}
+nav{
+ display:flex;
+ gap:25px;
+ align-items:center;
+ color:#d7dce5;
+ font-size:13px
+}
+nav a:hover{color:#fff}
+
+.btn{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ gap:9px;
+ padding:13px 19px;
+ border-radius:9px;
+ background:linear-gradient(110deg,var(--red),#b91e2b);
+ font-weight:800;
+ font-size:13px;
+ box-shadow:0 9px 28px rgba(237,48,56,.18);
+ transition:.2s
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn.secondary{
+ background:transparent;
+ border:1px solid rgba(255,255,255,.24);
+ box-shadow:none
+}
+
+.hero{
+ position:relative;
+ overflow:hidden;
+ padding:92px 0 84px;
+ background:
+ radial-gradient(ellipse at 78% 35%,rgba(35,88,216,.23),transparent 38%),
+ radial-gradient(ellipse at 15% 80%,rgba(237,48,56,.13),transparent 32%),
+ linear-gradient(135deg,#0b101a,#080b12 65%)
+}
+.hero:after{
+ content:"";
+ position:absolute;
+ right:-130px;
+ top:-180px;
+ width:520px;
+ height:520px;
+ border:1px solid rgba(255,255,255,.07);
+ border-radius:50%;
+ box-shadow:0 0 0 55px rgba(255,255,255,.018),0 0 0 110px rgba(255,255,255,.012);
+ pointer-events:none
+}
+.hero-grid{
+ display:grid;
+ grid-template-columns:1.1fr .9fr;
+ gap:55px;
+ align-items:center;
+ position:relative;
+ z-index:1
+}
+.eyebrow{
+ color:#e9b8bb;
+ font-size:11px;
+ letter-spacing:.22em;
+ text-transform:uppercase;
+ font-weight:800
+}
+h1{
+ font-size:clamp(40px,5.8vw,70px);
+ line-height:1.04;
+ letter-spacing:-.045em;
+ margin:17px 0 20px;
+ max-width:650px
+}
+h1 span{
+ background:linear-gradient(90deg,#ff6268,#7195ff);
+ background-clip:text;
+ color:transparent
+}
+.hero p{
+ color:#c1c9d5;
+ max-width:540px;
+ font-size:17px;
+ margin:0 0 28px
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-logo{
+ background:transparent;
+ border:0;
+ border-radius:0;
+ padding:0;
+ box-shadow:none;
+ transform:none;
+ filter:drop-shadow(0 22px 34px rgba(0,0,0,.45))
+}
+.hero-logo img{
+ display:block;
+ width:100%;
+ height:auto;
+ object-fit:contain
+}
+.hero-note{
+ margin-top:16px;
+ color:#aeb8c7;
+ text-align:center;
+ font-size:11px;
+ letter-spacing:.12em;
+ text-transform:uppercase
+}
+
+.stats{
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
+ background:#0c111a
+}
+.stats-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ padding:20px 0
+}
+.stat{
+ text-align:center;
+ padding:5px 12px;
+ border-right:1px solid var(--line)
+}
+.stat:last-child{border:0}
+.stat b{display:block;font-size:14px}
+.stat span{color:var(--muted);font-size:11px}
+
+section{padding:78px 0}
+.section-head{
+ display:flex;
+ align-items:end;
+ justify-content:space-between;
+ gap:25px;
+ margin-bottom:30px
+}
+.kicker{
+ color:#ff6970;
+ text-transform:uppercase;
+ font-size:10px;
+ letter-spacing:.2em;
+ font-weight:800
+}
+h2{
+ font-size:clamp(28px,4vw,42px);
+ line-height:1.1;
+ letter-spacing:-.035em;
+ margin:9px 0 0
+}
+.section-head p{
+ color:var(--muted);
+ max-width:430px;
+ font-size:13px;
+ margin:0
+}
+
+.catalog{
+ background:linear-gradient(180deg,#0a0e16,#0c111a)
+}
+.catalog-full-wrap{
+ display:flex;
+ justify-content:flex-start;
+ margin:-8px 0 24px
+}
+.catalog-full{
+ background:linear-gradient(110deg,#2358d8,#1744ad);
+ box-shadow:0 9px 28px rgba(35,88,216,.22);
+ letter-spacing:.02em
+}
+.catalog-full:hover{filter:brightness(1.12)}
+
+.cards{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:16px
+}
+.card{
+ background:linear-gradient(145deg,#151d2a,#0f1520);
+ border:1px solid rgba(255,255,255,.11);
+ border-radius:17px;
+ overflow:hidden;
+ transition:transform .25s,border-color .25s,box-shadow .25s
+}
+.card:hover{
+ transform:translateY(-5px);
+ border-color:rgba(95,133,231,.55);
+ box-shadow:0 18px 38px rgba(0,0,0,.24)
+}
+.card-art{
+ height:230px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ position:relative;
+ overflow:hidden;
+ background:#080b12
+}
+.card-art img{
+ display:block;
+ width:100%;
+ height:100%;
+ object-fit:contain;
+ object-position:center;
+ border-radius:0
+}
+.card:nth-child(2n) .card-art{
+ background:radial-gradient(circle at 50% 50%,rgba(237,48,56,.12),transparent 55%),linear-gradient(135deg,#151a24,#080b12)
+}
+.card-content{padding:20px}
+.card-content h3{font-size:18px;margin:0 0 7px}
+.card-content p{
+ font-size:12px;
+ color:var(--muted);
+ min-height:40px;
+ margin:0 0 17px
+}
+.card-content a{
+ font-size:12px;
+ font-weight:800;
+ color:#fff;
+ border-bottom:1px solid var(--red);
+ padding-bottom:4px
+}
+.note{
+ margin-top:22px;
+ color:#aeb8c7;
+ font-size:12px;
+ padding:15px 17px;
+ border:1px solid var(--line);
+ border-radius:10px;
+ background:rgba(255,255,255,.025)
+}
+
+.why-grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:40px;
+ align-items:center
+}
+.why-panel{
+ background:linear-gradient(145deg,#17243a,#101722);
+ border:1px solid var(--line);
+ border-radius:18px;
+ padding:30px
+}
+.why-panel h3{
+ font-size:25px;
+ line-height:1.15;
+ margin:0 0 13px
+}
+.why-panel p{color:#b8c2d1;font-size:14px;margin:0}
+.points{display:grid;gap:16px}
+.point{display:flex;gap:13px;align-items:flex-start}
+.check{
+ width:30px;
+ height:30px;
+ flex:0 0 30px;
+ border-radius:9px;
+ background:linear-gradient(135deg,var(--red),var(--blue));
+ display:grid;
+ place-items:center;
+ font-weight:900
+}
+.point b{display:block;font-size:14px}
+.point span{
+ display:block;
+ color:var(--muted);
+ font-size:12px;
+ margin-top:3px
+}
+
+/* Galeria de fotos LEGADU */
+.gallery-real{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:16px
+}
+.gallery-photo{
+ position:relative;
+ height:250px;
+ overflow:hidden;
+ border-radius:15px;
+ border:1px solid var(--line);
+ background:#111722
+}
+.gallery-photo img{
+ width:100%;
+ height:100%;
+ display:block;
+ object-fit:contain;
+ padding:8px;
+ transition:transform .35s
+}
+.gallery-photo:hover img{transform:scale(1.04)}
+.gallery-photo:after{
+ content:"";
+ position:absolute;
+ inset:45% 0 0;
+ background:linear-gradient(transparent,rgba(0,0,0,.85));
+ pointer-events:none
+}
+.gallery-photo strong{
+ position:absolute;
+ z-index:2;
+ bottom:15px;
+ left:16px;
+ right:12px;
+ font-size:14px;
+ color:#fff;
+ text-shadow:0 2px 8px #000
+}
+
+.cta{padding:0 0 80px}
+.cta-box{
+ border-radius:20px;
+ padding:42px;
+ background:radial-gradient(circle at 90% 20%,rgba(35,88,216,.35),transparent 35%),linear-gradient(110deg,#1b202d,#101722);
+ border:1px solid var(--line);
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:25px
+}
+.cta-box h2{font-size:32px;max-width:570px}
+.cta-box p{color:#b9c3d1;font-size:13px}
+
+footer{
+ border-top:1px solid var(--line);
+ padding:28px 0;
+ color:#9da8b8;
+ font-size:11px
+}
+.footer-inner{
+ display:flex;
+ justify-content:space-between;
+ gap:20px;
+ align-items:center
+}
+.footer-brand{display:flex;align-items:center;gap:10px}
+.footer-brand img{
+ width:66px;
+ height:48px;
+ object-fit:contain;
+ background:transparent;
+ border-radius:0;
+ padding:0
+}
+.social-links{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ margin-top:9px
+}
+.social-links a{
+ display:inline-flex;
+ align-items:center;
+ gap:7px;
+ padding:8px 12px;
+ border:1px solid rgba(255,255,255,.16);
+ border-radius:8px;
+ color:#f7f8fb;
+ font-size:11px;
+ font-weight:700;
+ transition:.2s
+}
+.social-links a:hover{
+ border-color:#7195ff;
+ background:rgba(35,88,216,.13);
+ transform:translateY(-2px)
+}
+.wa-float{
+ position:fixed;
+ right:20px;
+ bottom:20px;
+ z-index:30;
+ background:#19b85a;
+ color:#fff;
+ padding:13px 17px;
+ border-radius:30px;
+ font-weight:800;
+ font-size:12px;
+ box-shadow:0 8px 30px rgba(0,0,0,.4)
+}
+
+@media(max-width:800px){
+ nav{display:none}
+ .hero{padding:58px 0}
+ .hero-grid,.why-grid{grid-template-columns:1fr;gap:30px}
+ .hero-logo{max-width:440px;margin:auto}
+ .cards{grid-template-columns:repeat(2,1fr)}
+ .section-head{display:block}
+ .section-head p{margin-top:12px}
+ .gallery-real{grid-template-columns:repeat(2,1fr)}
+ .cta-box{display:block;padding:28px}
+ .cta-box .btn{margin-top:10px}
+}
+
 @media(max-width:520px){
- .brand img{width:66px;height:48px}.brand strong{font-size:13px}.hero p{font-size:15px}
- .hero-actions .btn{width:100%}.cards{grid-template-columns:1fr}.card-art{height:220px}
+ .brand img{width:66px;height:48px}
+ .brand strong{font-size:13px}
+ .hero p{font-size:15px}
+ .hero-actions .btn{width:100%}
+ .cards{grid-template-columns:1fr}
+ .card-art{height:220px}
  .stats-grid{grid-template-columns:1fr;gap:12px}
- .stat{border-right:0;border-bottom:1px solid var(--line);padding:10px}.stat:last-child{border:0}
- .gallery{grid-template-columns:1fr}.gallery-box:first-child{grid-column:auto}.gallery-box{min-height:150px}
- .footer-inner{align-items:flex-start;flex-direction:column}.cta-box h2{font-size:27px}
+ .stat{
+  border-right:0;
+  border-bottom:1px solid var(--line);
+  padding:10px
+ }
+ .stat:last-child{border:0}
+ .gallery-real{grid-template-columns:1fr}
+ .gallery-photo{height:240px}
+ .footer-inner{align-items:flex-start;flex-direction:column}
+ .cta-box h2{font-size:27px}
 }
 </style>
 </head>
+
 <body>
-<header><div class="container nav">
- <a class="brand" href="#inicio"><img src="assets/logo-legadu.png" alt="Logotipo original LEGADU"><span><strong>LEGADU</strong><small>FESTAS & EVENTOS</small></span></a>
- <nav><a href="#inicio">Início</a><a href="#catalogo">Catálogo</a><a href="#sobre">A LEGADU</a><a href="#galeria">Galeria</a></nav>
- <a class="btn" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20LEGADU%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento ↗</a>
-</div></header>
+
+<header>
+ <div class="container nav">
+  <a class="brand" href="#inicio">
+   <img src="assets/logo-legadu.png" alt="Logotipo original LEGADU">
+   <span><strong>LEGADU</strong><small>FESTAS & EVENTOS</small></span>
+  </a>
+
+  <nav>
+   <a href="#inicio">Início</a>
+   <a href="#catalogo">Catálogo</a>
+   <a href="#sobre">A LEGADU</a>
+   <a href="#galeria">Galeria</a>
+  </nav>
+
+  <a class="btn" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20LEGADU%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+   Pedir orçamento ↗
+  </a>
+ </div>
+</header>
+
 <main>
-<section class="hero" id="inicio"><div class="container hero-grid">
- <div><div class="eyebrow">Ribeirão Grande e região</div><h1>Sua festa merece <span>esse cuidado.</span></h1>
- <p>Tendas, mesas, cadeiras, brinquedos e estrutura para transformar seu evento em um momento especial.</p>
- <div class="hero-actions"><a class="btn" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20com%20a%20LEGADU." target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp ↗</a><a class="btn secondary" href="#catalogo">Conhecer o catálogo</a></div></div>
- <div><div class="hero-logo"><img src="assets/logo-legadu.png" alt="LEGADU Festas & Eventos, logotipo oficial"></div><div class="hero-note">Legadu é família, fazendo sua festa!</div></div>
-</div></section>
-<div class="stats"><div class="container stats-grid">
- <div class="stat"><b>Estrutura para seu evento</b><span>Do pequeno encontro à grande comemoração</span></div>
- <div class="stat"><b>Atendimento próximo</b><span>Ribeirão Grande e região</span></div>
- <div class="stat"><b>Orçamento personalizado</b><span>Conforme data, local e necessidade</span></div>
-</div></div>
-<section class="catalog" id="catalogo"><div class="container">
- <div class="section-head"><div><div class="kicker">Nosso catálogo</div><h2>Tudo para sua festa acontecer.</h2></div><p>Escolha o que precisa e fale diretamente com a LEGADU para consultar disponibilidade e valores.</p></div>
- <div class="catalog-full-wrap"><a class="btn catalog-full" href="https://wa.me/c/5515997549326" target="_blank" rel="noopener noreferrer">VER CATÁLOGO COMPLETO NO WHATSAPP ↗</a></div>
- <div class="cards">
-  <article class="card"><div class="card-art"><img src="assets/tendas.jpg?v=20261116" alt="Tendas brancas montadas para eventos" loading="lazy"></div><div class="card-content"><h3>Tendas brancas</h3><p>Opções de tamanhos para festas, feiras, confraternizações e eventos.</p><a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20tendas%20brancas%20para%20meu%20evento." target="_blank" rel="noopener">Consultar tendas ↗</a></div></article>
-  <article class="card"><div class="card-art"><img src="assets/mesas-cadeiras.jpg?v=20261116" alt="Mesas e cadeiras brancas para locação" loading="lazy"></div><div class="card-content"><h3>Mesas e cadeiras</h3><p>Locação de mesas, cadeiras e tampões para acomodar seus convidados.</p><a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20mesas%20e%20cadeiras." target="_blank" rel="noopener">Consultar mesas e cadeiras ↗</a></div></article>
-  <article class="card"><div class="card-art"><img src="assets/inflaveis.jpg?v=20261116" alt="Brinquedo inflável tipo tobogã" loading="lazy"></div><div class="card-content"><h3>Brinquedos infláveis</h3><p>Castelinhos, tobogãs e opções para deixar a criançada animada.</p><a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20brinquedos%20infl%C3%A1veis." target="_blank" rel="noopener">Consultar infláveis ↗</a></div></article>
-  <article class="card"><div class="card-art"><img src="assets/cama-elastica.jpg?v=20261116" alt="Cama elástica para festas" loading="lazy"></div><div class="card-content"><h3>Cama elástica</h3><p>Diversão para festas infantis e momentos especiais.</p><a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20a%20cama%20el%C3%A1stica." target="_blank" rel="noopener">Consultar cama elástica ↗</a></div></article>
-  <article class="card"><div class="card-art"><img src="assets/piscina-bolinhas.jpg?v=20261116" alt="Piscina de bolinhas infantil" loading="lazy"></div><div class="card-content"><h3>Piscina de bolinhas e recreação</h3><p>Mais opções de diversão para completar a experiência das crianças.</p><a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20piscina%20de%20bolinhas%20e%20recrea%C3%A7%C3%A3o." target="_blank" rel="noopener">Consultar opções ↗</a></div></article>
-  <article class="card"><div class="card-art"><img src="assets/playkids-carretinha.jpg?v=20261116" alt="PlayKids e carretinha de recreação" loading="lazy"></div><div class="card-content"><h3>Play Kids e Carretinha</h3><p>Estruturas de diversão para levar alegria ao seu evento.</p><a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20o%20Play%20Kids%20ou%20a%20Carretinha%20PlayKids." target="_blank" rel="noopener">Consultar Play Kids ↗</a></div></article>
+
+<section class="hero" id="inicio">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Ribeirão Grande e região</div>
+   <h1>Sua festa merece <span>esse cuidado.</span></h1>
+   <p>Tendas, mesas, cadeiras, brinquedos e estrutura para transformar seu evento em um momento especial.</p>
+
+   <div class="hero-actions">
+    <a class="btn" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20com%20a%20LEGADU." target="_blank" rel="noopener">
+     Solicitar orçamento pelo WhatsApp ↗
+    </a>
+    <a class="btn secondary" href="#catalogo">Conhecer o catálogo</a>
+   </div>
+  </div>
+
+  <div>
+   <div class="hero-logo">
+    <img src="assets/logo-legadu.png" alt="LEGADU Festas & Eventos, logotipo oficial">
+   </div>
+   <div class="hero-note">Legadu é família, fazendo sua festa!</div>
+  </div>
  </div>
- <div class="note">Os valores são informados por orçamento. A disponibilidade e o preço dependem da data, do local, do transporte e dos itens escolhidos.</div>
-</div></section>
-<section id="sobre"><div class="container why-grid">
- <div class="why-panel"><div class="kicker">Sobre a LEGADU</div><h3>Mais do que locar equipamentos, é fazer parte de bons momentos.</h3><p>A LEGADU Festas & Eventos trabalha para deixar cada comemoração mais completa, com atenção à estrutura, organização e cuidado em cada etapa.</p></div>
- <div class="points">
-  <div class="point"><div class="check">✓</div><div><b>Estrutura para diferentes ocasiões</b><span>Aniversários, confraternizações, feiras, eventos comunitários e muito mais.</span></div></div>
-  <div class="point"><div class="check">✓</div><div><b>Atendimento com atenção</b><span>Conversa direta para entender o que seu evento precisa.</span></div></div>
-  <div class="point"><div class="check">✓</div><div><b>Orçamento de acordo com seu evento</b><span>Montamos a proposta considerando data, endereço e equipamentos.</span></div></div>
-  <div class="point"><div class="check">✓</div><div><b>Ribeirão Grande e região</b><span>Consulte as condições de atendimento para sua localidade.</span></div></div>
+</section>
+
+<div class="stats">
+ <div class="container stats-grid">
+  <div class="stat">
+   <b>Estrutura para seu evento</b>
+   <span>Do pequeno encontro à grande comemoração</span>
+  </div>
+  <div class="stat">
+   <b>Atendimento próximo</b>
+   <span>Ribeirão Grande e região</span>
+  </div>
+  <div class="stat">
+   <b>Orçamento personalizado</b>
+   <span>Conforme data, local e necessidade</span>
+  </div>
  </div>
-</div></section>
-<section id="galeria" style="padding-top:10px"><div class="container">
- <div class="section-head"><div><div class="kicker">Momentos LEGADU</div><h2>Uma festa, muitas lembranças.</h2></div><p>Em breve, esta galeria vai reunir fotos dos equipamentos e de eventos realizados pela LEGADU.</p></div>
- <div class="gallery"><div class="gallery-box"><div><strong>Estrutura para eventos</strong><small>Fotos reais das montagens LEGADU</small></div></div><div class="gallery-box"><div><strong>Brinquedos e diversão</strong><small>Momentos para guardar</small></div></div><div class="gallery-box"><div><strong>Família e comemoração</strong><small>A alegria de fazer parte</small></div></div></div>
-</div></section>
-<section class="cta"><div class="container cta-box">
- <div><div class="kicker">Vamos fazer sua festa?</div><h2>Conte para a gente o que você está planejando.</h2><p>Chame a LEGADU e consulte a disponibilidade para sua data.</p></div>
- <a class="btn" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20LEGADU.%20Quero%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener">Falar com a LEGADU ↗</a>
-</div></section>
+</div>
+
+<section class="catalog" id="catalogo">
+ <div class="container">
+  <div class="section-head">
+   <div>
+    <div class="kicker">Nosso catálogo</div>
+    <h2>Tudo para sua festa acontecer.</h2>
+   </div>
+   <p>Escolha o que precisa e fale diretamente com a LEGADU para consultar disponibilidade e valores.</p>
+  </div>
+
+  <div class="catalog-full-wrap">
+   <a class="btn catalog-full" href="https://wa.me/c/5515997549326" target="_blank" rel="noopener noreferrer">
+    VER CATÁLOGO COMPLETO NO WHATSAPP ↗
+   </a>
+  </div>
+
+  <div class="cards">
+
+   <article class="card">
+    <div class="card-art">
+     <img src="assets/tendas.jpg?v=20261116" alt="Tendas brancas montadas para eventos" loading="lazy">
+    </div>
+    <div class="card-content">
+     <h3>Tendas brancas</h3>
+     <p>Opções de tamanhos para festas, feiras, confraternizações e eventos.</p>
+     <a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20tendas%20brancas%20para%20meu%20evento." target="_blank" rel="noopener">Consultar tendas ↗</a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="card-art">
+     <img src="assets/mesas-cadeiras.jpg?v=20261116" alt="Mesas e cadeiras brancas para locação" loading="lazy">
+    </div>
+    <div class="card-content">
+     <h3>Mesas e cadeiras</h3>
+     <p>Locação de mesas, cadeiras e tampões para acomodar seus convidados.</p>
+     <a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20mesas%20e%20cadeiras." target="_blank" rel="noopener">Consultar mesas e cadeiras ↗</a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="card-art">
+     <img src="assets/inflaveis.jpg?v=20261116" alt="Brinquedo inflável tipo tobogã" loading="lazy">
+    </div>
+    <div class="card-content">
+     <h3>Brinquedos infláveis</h3>
+     <p>Castelinhos, tobogãs e opções para deixar a criançada animada.</p>
+     <a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20brinquedos%20infl%C3%A1veis." target="_blank" rel="noopener">Consultar infláveis ↗</a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="card-art">
+     <img src="assets/cama-elastica.jpg?v=20261116" alt="Cama elástica para festas" loading="lazy">
+    </div>
+    <div class="card-content">
+     <h3>Cama elástica</h3>
+     <p>Diversão para festas infantis e momentos especiais.</p>
+     <a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20a%20cama%20el%C3%A1stica." target="_blank" rel="noopener">Consultar cama elástica ↗</a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="card-art">
+     <img src="assets/piscina-bolinhas.jpg?v=20261116" alt="Piscina de bolinhas infantil" loading="lazy">
+    </div>
+    <div class="card-content">
+     <h3>Piscina de bolinhas e recreação</h3>
+     <p>Mais opções de diversão para completar a experiência das crianças.</p>
+     <a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20piscina%20de%20bolinhas%20e%20recrea%C3%A7%C3%A3o." target="_blank" rel="noopener">Consultar opções ↗</a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="card-art">
+     <img src="assets/playkids-carretinha.jpg?v=20261116" alt="PlayKids e carretinha de recreação" loading="lazy">
+    </div>
+    <div class="card-content">
+     <h3>Play Kids e Carretinha</h3>
+     <p>Estruturas de diversão para levar alegria ao seu evento.</p>
+     <a href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20quero%20consultar%20o%20Play%20Kids%20ou%20a%20Carretinha%20PlayKids." target="_blank" rel="noopener">Consultar Play Kids ↗</a>
+    </div>
+   </article>
+
+  </div>
+
+  <div class="note">
+   Os valores são informados por orçamento. A disponibilidade e o preço dependem da data, do local, do transporte e dos itens escolhidos.
+  </div>
+ </div>
+</section>
+
+<section id="sobre">
+ <div class="container why-grid">
+
+  <div class="why-panel">
+   <div class="kicker">Sobre a LEGADU</div>
+   <h3>Mais do que locar equipamentos, é fazer parte de bons momentos.</h3>
+   <p>A LEGADU Festas & Eventos trabalha para deixar cada comemoração mais completa, com atenção à estrutura, organização e cuidado em cada etapa.</p>
+  </div>
+
+  <div class="points">
+   <div class="point">
+    <div class="check">✓</div>
+    <div>
+     <b>Estrutura para diferentes ocasiões</b>
+     <span>Aniversários, confraternizações, feiras, eventos comunitários e muito mais.</span>
+    </div>
+   </div>
+
+   <div class="point">
+    <div class="check">✓</div>
+    <div>
+     <b>Atendimento com atenção</b>
+     <span>Conversa direta para entender o que seu evento precisa.</span>
+    </div>
+   </div>
+
+   <div class="point">
+    <div class="check">✓</div>
+    <div>
+     <b>Orçamento de acordo com seu evento</b>
+     <span>Montamos a proposta considerando data, endereço e equipamentos.</span>
+    </div>
+   </div>
+
+   <div class="point">
+    <div class="check">✓</div>
+    <div>
+     <b>Ribeirão Grande e região</b>
+     <span>Consulte as condições de atendimento para sua localidade.</span>
+    </div>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<section id="galeria" style="padding-top:10px">
+ <div class="container">
+
+  <div class="section-head">
+   <div>
+    <div class="kicker">Momentos LEGADU</div>
+    <h2>Uma festa, muitas lembranças.</h2>
+   </div>
+   <p>Conheça um pouco da estrutura e das opções que a LEGADU oferece para seu evento.</p>
+  </div>
+
+  <div class="gallery-real">
+
+   <div class="gallery-photo">
+    <img src="assets/tendas.jpg" alt="Tendas para eventos" loading="lazy">
+    <strong>Estrutura para eventos</strong>
+   </div>
+
+   <div class="gallery-photo">
+    <img src="assets/mesas-cadeiras.jpg" alt="Mesas e cadeiras" loading="lazy">
+    <strong>Conforto para seus convidados</strong>
+   </div>
+
+   <div class="gallery-photo">
+    <img src="assets/inflaveis.jpg" alt="Brinquedos infláveis" loading="lazy">
+    <strong>Diversão para a criançada</strong>
+   </div>
+
+   <div class="gallery-photo">
+    <img src="assets/cama-elastica.jpg" alt="Cama elástica" loading="lazy">
+    <strong>Momentos de alegria</strong>
+   </div>
+
+   <div class="gallery-photo">
+    <img src="assets/playkids-carretinha.jpg" alt="PlayKids Carretinha" loading="lazy">
+    <strong>PlayKids e recreação</strong>
+   </div>
+
+   <div class="gallery-photo">
+    <img src="assets/piscina-bolinhas.jpg" alt="Piscina de bolinhas" loading="lazy">
+    <strong>Diversão para todas as idades</strong>
+   </div>
+
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container cta-box">
+  <div>
+   <div class="kicker">Vamos fazer sua festa?</div>
+   <h2>Conte para a gente o que você está planejando.</h2>
+   <p>Chame a LEGADU e consulte a disponibilidade para sua data.</p>
+  </div>
+
+  <a class="btn" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20LEGADU.%20Quero%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+   Falar com a LEGADU ↗
+  </a>
+ </div>
+</section>
+
 </main>
-<footer><div class="container footer-inner">
- <div class="footer-brand"><img src="assets/logo-legadu.png" alt=""><span><b style="color:#fff">LEGADU FESTAS & EVENTOS</b><br>Legadu é família, fazendo sua festa!</span></div>
- <div><b style="color:#fff">Acompanhe a LEGADU</b><div class="social-links"><a href="https://www.instagram.com/legadufestaseventos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da LEGADU">Instagram ↗</a><a href="https://www.facebook.com/legadubrinquedos" target="_blank" rel="noopener noreferrer" aria-label="Facebook da LEGADU">Facebook ↗</a></div><div style="margin-top:9px">WhatsApp: (15) 99754-9326<br>Ribeirão Grande e região</div></div>
- <div>© <span id="ano"></span> LEGADU Festas & Eventos</div>
-</div></footer>
-<a class="wa-float" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20LEGADU." target="_blank" rel="noopener">WhatsApp</a>
-<script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+
+<footer>
+ <div class="container footer-inner">
+
+  <div class="footer-brand">
+   <img src="assets/logo-legadu.png" alt="Logo LEGADU">
+   <span>
+    <b style="color:#fff">LEGADU FESTAS & EVENTOS</b><br>
+    Legadu é família, fazendo sua festa!
+   </span>
+  </div>
+
+  <div>
+   <b style="color:#fff">Acompanhe a LEGADU</b>
+   <div class="social-links">
+    <a href="https://www.instagram.com/legadufestaseventos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da LEGADU">Instagram ↗</a>
+    <a href="https://www.facebook.com/legadubrinquedos" target="_blank" rel="noopener noreferrer" aria-label="Facebook da LEGADU">Facebook ↗</a>
+   </div>
+   <div style="margin-top:9px">
+    WhatsApp: (15) 99754-9326<br>
+    Ribeirão Grande e região
+   </div>
+  </div>
+
+  <div>© <span id="ano"></span> LEGADU Festas & Eventos</div>
+
+ </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5515997549326?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20LEGADU." target="_blank" rel="noopener">
+ WhatsApp
+</a>
+
+<script>
+document.getElementById('ano').textContent=new Date().getFullYear();
+</script>
+
 </body>
 </html>
